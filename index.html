@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Profile Viewer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="Enter your user name" id="search" />
+        <div class="search-icon">
+          <i class="fas fa-search" id="searchbtn"></i>
+        </div>
+      </div>
+      <div id="main-box">
+        <div class="profile-info">
+          <div class="names">
+            <p>
+              <i class="fab fa-github"></i> User name:
+              <span id="username"></span>
+            </p>
+            <p><i class="fas fa-user"></i> Name: <span id="name"></span></p>
+          </div>
+        </div>
+        <div class="main-profile">
+          <img alt="Profile Image" id="profile-img" />
+        </div>
+        <div class="follows">
+          <div>Following: <span id="following"></span></div>
+          <div>Followers: <span id="followers"></span></div>
+        </div>
+        <div class="joined">
+            <p>Joined: <span id="joined"></span></p>
+        </div>
+        <div class="locat">
+          <div>
+            <i class="fas fa-map-marker-alt"></i> Location:
+            <span id="location"></span>
+          </div>
+        </div>
+        <div class="repos">
+          <p>
+            <i class="fab fa-github-square"></i> Repository:
+            <span id="repository"></span>
+          </p>
+        </div>
+        <div class="profileurl">
+          <div id="urlinfo">
+            <a id="profileurl" target="_blank"><i class="fas fa-link"></i> Link: <span id="profile-git-link"></span></a>
+          </div>
+        </div>
+      </div>
+      <span id="validity"></span>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
