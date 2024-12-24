@@ -29,7 +29,7 @@ function gitProfileSearch(event) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+        
         username.innerText = data.login || "N/A";
         name.innerText = data.name || "N/A";
         profileimg.setAttribute(
